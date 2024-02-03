@@ -52,7 +52,61 @@ def calculator(a, b, operator):
     print(f"Результат {a}{operator}{b} равен {result}")
 
 
+def health_simulation():
+    health = float(input("Enter the initial health of the character: "))
 
+    while health > 0:
+        damage = float(input("Enter the damage dealt to the character: "))
+
+        if not isinstance(damage, (int, float)):
+            print("Please enter a valid numeric value for damage.")
+            continue
+
+        health -= damage
+
+        if health <= 0:
+            print("Game over! The character's health is depleted.")
+        else:
+            print(f"The character's health is now {health}.")
+
+        # play_again = input("Do you want to continue? (yes/no): ")
+        #
+        # if play_again.lower() != 'yes':
+        #     break
+        #
+def health_simulation2():
+    health = float(input("Enter the initial health of the character: "))
+
+    while health > 0:
+        damage = float(input("Enter the damage dealt to the character: "))
+
+        if not isinstance(damage, (int, float)):
+            print("Please enter a valid numeric value for damage.")
+            continue
+
+        health -= damage
+
+        if health > 0:
+            print(f"The character's health is now {health}.True , Game on")
+
+        else:
+            print("Game over! The character's health is depleted.")
+
+def health_simulation3():
+    health = float(input("Enter the initial health of the character: "))
+    damage = float(input("Enter the damage dealt to the character: "))
+
+    while health > 0:
+        if not isinstance(damage, (int, float)):
+            print("Please enter a valid numeric value for damage.")
+            break
+
+        health -= damage
+
+        if health > 0:
+            print(f"The character's health is now {health}. True, Game on")
+        else:
+            print("Game over! The character's health is depleted.")
 
 
 
