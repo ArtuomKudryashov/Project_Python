@@ -10,9 +10,9 @@ def count_family_numbers (f,sc):
     countFam_2=len(membersFam_2)
 
     if countFam_1> countFam_2:
-        return ("The First Family is bigger" )
+        return ("The First Family is bigger. " +f )
     elif countFam_1<countFam_2:
-        return ("The Second Family is bigger")
+        return ("The Second Family is bigger. "+ sc)
     else:
         return ("Both families are equal")
 

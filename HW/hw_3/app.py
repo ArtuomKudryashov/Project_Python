@@ -1,50 +1,56 @@
 from helper import task, count_family_numbers,list_to_set
 #
-# task(3.1)
-# my_list = ['a', 'b', [1, 2, 3], 'd']
-# print(my_list[2])
-#
-# task(3.2)
-# list_1 = ['Hi', 'ananas', 2, 75, 'pizza', 36, 100]
-# sum_of_el = [summ for summ in list_1 if isinstance(summ,int)]
-# print(sum(sum_of_el))
-#
-#
-# sum_of_el2= sum(summ for summ in list_1 if isinstance(summ,int))
-# print(sum_of_el2)
-#
-# task(3.2)
-# el_a = [el for el in list_1 if isinstance(el,str) and 'a' in el]
-# print(el_a)
-#
-# task(3.3)
-# anim =['cat', 'dog', 'horse', 'cow']
-# anim_tuple = tuple(anim)
-# print(anim_tuple)
-#
-# task(3.4)
-#
-# family_1 = input("Введите членов первой семьи, разделяя их запятой: ")
-# family_2 = input("Введите членов второй семьи, разделяя их запятой: ")
-#
-# print(count_family_numbers(family_1,family_2))
-#
-# task(3.5)
-# my_film ={
-#     "title":"Тёмный рыцарь:Возрождение легенды",
-#     "director":"Christopher Nolan",
-#     "year":"2012",
-#     "budget":"250 000 000",
-#     "main_actor":"Christian Bale",
-#     "slogan":"Why so serious?"
-# }
-# for item in my_film.items():
-#     key,value = item
-#     print(item)
-#     print(key)
-#
-#     print(key)
-#     print(value)
+task(3.1)
+my_list = ['a', 'b', [1, 2, 3], 'd']
+print(my_list[2])
+
+print(my_list[2][0])
+print(my_list[2][1])
+print(my_list[2][2])
+
+
+task(3.2)
+list_1 = ['Hi', 'ananas', 2, 75, 'pizza', 36, 100]
+sum_of_el = [summ for summ in list_1 if isinstance(summ,int)]
+print(sum(sum_of_el))
+
+
+sum_of_el2= sum(summ for summ in list_1 if isinstance(summ,int))
+print(sum_of_el2)
+
+task(3.2)
+el_a = [el for el in list_1 if isinstance(el,str) and 'a' in el]
+print(el_a)
+
+task(3.3)
+anim =['cat', 'dog', 'horse', 'cow']
+anim_tuple = tuple(anim)
+print(anim_tuple)
+
+task(3.4)
+
+family_1 = input("Введите членов первой семьи, разделяя их запятой: ")
+family_2 = input("Введите членов второй семьи, разделяя их запятой: ")
+
+print(count_family_numbers(family_1,family_2))
+
+task(3.5)
+my_film ={
+    "title":"Тёмный рыцарь:Возрождение легенды",
+    "director":"Christopher Nolan",
+    "year":"2012",
+    "budget":"250 000 000",
+    "main_actor":"Christian Bale",
+    "slogan":"Why so serious?"
+}
+for item in my_film.items():
+    print(item)
+    # key,value = item
+    # print(item)
+    # print(key)
+
+    # print(key)
+    # print(value)
 
 task(3.6)
 my_dictionary = {'num1': 375,
