@@ -10,7 +10,6 @@ print_arguments(name="John",
                 age=35,
                 position="web developer")
 task(3)
-
 my_list = [20, -3, 15, 2, -1, -21]
 positiveNum(my_list)
 
