@@ -21,4 +21,3 @@ def count_family_numbers (f,sc):
 def list_to_set (T_list):
     my_set = set(T_list)
     return my_set
-
